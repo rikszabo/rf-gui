@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="" />
+        <title>Adatmódosítás</title>
+		<link rel="stylesheet" type="text/css" href="css/profile_modify.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   </head>
+
+<body>
+
+   <nav class="nav navbar-inverse navbar-fixed-top"  style="opacity: 0.8;" >
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+            </button> <a class="navbar-brand" href="list.html">KONTRA</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="registration.html">Regisztráció</a>
+                </li>
+                <li><a href="login.html">Bejelentkezés</a>
+                </li>              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">               
+
+                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profil <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu" role="menu">
+						<li><a href="profile.html">Profil megtekintés</a>    
+						</li>		
+                        <li><a href="profile_modify.html">Profil módosítás</a>
+                        </li>
+                        <li><a href="#" style="color: #ff0000;">Kijelentkezés</a>    
+						</li>						
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+	</nav>
+
+
+   <div class="container target" style="margin-top: 100px;">
+	   <div class="row">
+		   <div class="col-sm-10">
+			   <h1 class="" style="color: #ffffff;">FlashGOD</h1>
+			   <br>
+		   </div>
+		   <img title="profile image" class="img-circle img-responsive" src="zeusprofilpic.jpg" style="width: 100px; height: 100px; float:right"/>
+		   <div style="margin-top: 80px; margin-left: 20px;">
+			   <form action="" style="">
+				   <input type="file" name="pic" accept="image/*">
+			   </form>
+		   </div>
+	   </div>
+   </div>
+
+   <br>
+
+	<br>
+
+   <div class="" style="clear: both; margin-right: auto; margin-left: auto;">
+
+	   <div class="container" style="clear: both; margin-right: auto; margin-left: auto;">
+		   <input type="text" class="form-control" name="e-mail" placeholder="Email cím" required="" autofocus="" />
+		   <input type="text" class="form-control" name="fullname" placeholder="Teljes név" required="" autofocus="" />
+		   <input type="password" class="form-control" name="password" placeholder="Jelszó" required="" autofocus="" />
+		   <input type="password" class="form-control" name="passwordagain" placeholder="Jelszó újra" required=""/>
+
+		   <div class="panel panel-default" style="margin-top: 30px;">
+			   <div class="panel-heading">Weboldal
+			   </div>
+			   <input type="text" class="form-control" name="webpage" placeholder="Weboldal" required="" autofocus="" />
+			   <input type="text" class="form-control" name="faceboook" placeholder="Facebook" required="" autofocus="" />
+		   </div>
+
+
+
+		   <div class="list-group" style="">
+			   <div class="panel panel-default">
+				   <div class="panel-heading">FlashGOD</div>
+				   <div class="form-group" >
+					   <textarea title="" class="form-control" id="exampleTextarea" style="resize: none; min-height: 220px; height: 100%; width: 100%;"></textarea>
+				   </div>
+			   </div>
+		   </div>
+
+		   <div class="container" style="position: relative; width: 200px;">
+			   <button class="btn btn-lg btn-primary btn-block" type="submit" style="position: relative;  margin-top: 20px; width: 200px;">Módosít</button>
+		   </div>
+	   </div>
+   </div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+

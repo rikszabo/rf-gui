@@ -1,0 +1,151 @@
+
+#startpage{
+
+	background-image: url("../img/blckwall.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+}
+
+.fly-in-text {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%) translateY(140%);
+}
+
+.fly-in-text .startText {
+    display: inline-block;
+    margin-right: 40px;
+    font-weight: 300;
+    font-size: 4em;
+    color: #fff;
+    opacity: 1;
+    transition: all 2.5s ease;
+}
+
+.fly-in-text .startText:last-child {
+	
+	margin-right: 0;
+}
+
+.fly-in-text.cloud .startText {
+	
+    opacity: 0;
+}	
+
+.fly-in-text.cloud .startText:nth-child(1) { transform: translateX(-200px) translateY(-100px); 	}
+.fly-in-text.cloud .startText:nth-child(2) { transform: translateX(70px) translateY(100px); 	}
+.fly-in-text.cloud .startText:nth-child(3) { transform: translateX(-150px) translateY(-80px); 	}
+.fly-in-text.cloud .startText:nth-child(4) { transform: translateX(10px) translateY(-200px); 	}
+.fly-in-text.cloud .startText:nth-child(5) { transform: translateX(-300px) translateY(400px); 	}
+.fly-in-text.cloud .startText:nth-child(6) { transform: translateX(200px) translateY(-100px); 	}
+
+
+#pagecontent{
+	background-image: url("../img/alaphatter.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+}
+
+#center{
+	position: absolute;
+	top: 82%;
+	left: 50%;
+	transform: translate(-50%,-10%);
+}
+
+ul{
+	display: inline;
+}
+
+ul .edited{
+	list-style: none;
+	border: 2px solid #00bfff;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 2px;
+	border-radius: 15px;
+}
+
+ul .edited a{
+	text-decoration: none;
+	padding: 10px 35px;
+	display: block;
+	text-align: center;
+}
+
+ul .edited:nth-child(1) a{
+	color: #00bfff;
+	border-radius: 13px;
+	border: 1px solid rgb(0,255,255);
+	-webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+	-moz-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+ul .edited:nth-child(1):hover a{
+	box-shadow: 0px 0px 10px rgb(255,255,255), 0px 0px 10px rgb(0,255,255);
+	background-color: #00bfff;
+	border-radius: 13px;
+	color: #ffffff;
+	-webkit-transition: color 0.3s ease-in, background-color 0.3 ease-in;
+	-moz-transition: color 0.3s ease-in, background-color 0.3 ease-in;
+	transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+ul .edited:nth-child(1):focus a{
+	box-shadow: 0px 0px 10px rgb(255,255,255), 0px 0px 10px rgb(0,255,255);
+	background-color: #00bfff;
+	border-radius: 13px;
+	color: #00bfff;
+	-webkit-transition: color 0.3s ease-in, background-color 0.3 ease-in;
+	-moz-transition: color 0.3s ease-in, background-color 0.3 ease-in;
+	transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+
+@keyframes bouncearrow{
+	0%{top: 0px;}
+	50%{top: 20px;}
+	100%{top: 0px;}
+}
+
+
+
+/* flipping cards */
+
+.flip3D{ width:250px; height:250px; margin:10px; float: initial; padding-bottom: 100px; }
+.flip3D > .front{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:#FC0; width:250px; height:250px; border-radius: 15px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.flip3D > .back{
+	position:absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #80BFFF; width:250px; height:250px; border-radius: 15px; 
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+	transition: transform .5s linear 0s;
+}
+.flip3D:hover > .front{
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}
